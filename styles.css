@@ -1,0 +1,238 @@
+
+/**import-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+/**default styles-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%); /*card background*/
+    --soft-violet: hsl(277, 64%, 61%);/*accent*/
+    --white: hsl(0, 0%, 100%); /*main heading, stats*/--slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /*main paragraph*/
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);/*stat headings*/
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    max-width: 100%; 
+    mix-blend-mode: multiply;
+    opacity: 90%;
+    border-bottom: 1px solid var(--dark-desaturated-blue);
+}
+
+
+
+body {
+    color: var(--white);
+    padding: 2em;
+    min-height: 100vh;
+    font-size: 15px;
+    display: grid;
+    place-content: center;
+    background-color: var(--very-dark-blue);
+    font-family: 'Inter', sans-serif;
+}
+
+
+main {
+    width: 300px;
+}
+
+
+.insights {
+    color: var(--soft-violet);
+}
+
+
+.hero-image {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 0.3em 0.3em 0 0;
+}
+
+
+
+.discover {
+    border-top: 1px solid var(--dark-desaturated-blue);
+    background-color: var(--dark-desaturated-blue);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-block-start: 2em;
+    padding-block-end: 2em;
+    border-radius: 0 0 0.3em 0.3em;
+    margin-block-start: -4px;
+}
+
+
+h1 {
+    margin-block-end: 20px;
+    line-height: 1;
+    font-size: 1.7em;
+    padding: 0 2em 0 0;
+    margin-inline-start: 1.5em;
+    width: 11em;
+}
+
+
+.description {
+    width: 20em;
+}
+
+
+.description > p {
+    width: 18em;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    color: var(--slightly-transparent-white);
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-block-start: 2em;
+}
+
+
+
+section p {
+    font-weight: 600;
+}
+
+
+.companies {
+    font-size: 0.6em;
+    letter-spacing: 1px;
+    color: var(--slightly-transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.templates {
+    font-size: 0.6em;
+    letter-spacing: 1px;
+    color: var(--slightly-transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.queries {
+    font-size: 0.6em;
+    color: var(--slightly-transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+
+
+
+/*@media*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (min-width: 830px){
+
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+    }
+
+
+    img {
+        height: 300px;
+        border: none;
+    }
+
+
+    h1 {
+        text-align: left;
+        margin: 0;
+        width: 11em;
+    }
+
+
+    div p {
+        font-weight: 600;
+    }
+
+
+    .description {
+        display: flex;
+        width: 23em;
+        gap: 5px;
+        flex-direction: column;
+        margin-block-start: 0.5em;
+    }
+
+
+    .hero-image {
+        margin: 0;
+        border-radius: 0 0.3em 0.3em 0;
+    }
+
+
+    img {
+    border-radius: 0 0 0.3em 0;
+    }
+
+
+    .description > p {
+        color: var(--slightly-transparent-white);
+        font-size: 0.83em;
+        font-family: 'Inter', sans-serif;
+        width: 25em;  
+        font-weight: 100;      
+        padding-inline-end: 20px;
+        text-align: left;
+        margin: 0;
+        margin-block-start: 15px;
+    }
+
+
+    section p {
+        text-align: left;
+    }
+
+    
+    .discover {
+        width: 25em;
+        padding-inline-start: 2em;
+        border-radius: 0.3em 0 0 0.3em;
+        margin: 0;
+
+    } 
+
+    section {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        margin-block-start: 2.5em;
+        
+    }
+
+
+    div p {
+        font-weight: 600;
+    }
+
+}
+
+
