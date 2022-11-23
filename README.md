@@ -49,6 +49,8 @@ Users should be able to:
 
 - **mix-blend-mode**: This css property allows you to specify how an element blends with its direct parentbackground.
 
+- **section**: HTML _section_ should always have a heading h2 - h6 in it. 
+
 ```css
 .hero-image {
     background-color: hsl(277, 64%, 61%);
